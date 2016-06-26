@@ -6,16 +6,7 @@
     <meta name="robots" content="index,follow">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
-    <title>
-  <?php
-      if(is_front_page()) {bloginfo('name');
-      if($paged){echo ' | Page'.$paged;}}
-      elseif(is_category()) {echo single_cat_title().' | '; if($paged){echo ' Page'.$paged.' | ';} bloginfo('name');}
-      elseif(is_tag()) {echo single_tag_title().' | '; if($paged){echo ' Page'.$paged.' | ';} bloginfo('name');}
-      elseif(is_month()) {echo get_the_time('Y年n月').' | '; if($paged){echo ' Page'.$paged.' | ';} bloginfo('name');}
-      else {wp_title('|',true,'right'); if($paged){echo 'Page'.$paged.' | ';} bloginfo('name');}
-   ?>
-    </title>
+    <title>＊＊＊＊＊＊＊＊</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta property="og:description" content="">
@@ -33,7 +24,7 @@
     <header class="global-header">
       <div class="toggle-overlay"></div>
       <div class="header__top-bar">
-        <h1 class="header-logo"><a href="/" class="header-logo__link"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Baby-T"></a></h1>
+        <h1 class="header-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo__link"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Baby-T"></a></h1>
         <div class="toggle-wrap">
           <div id="toggle"><a href="#" class="toggle__link"><span class="toggle-icon"></span></a></div>
         </div>

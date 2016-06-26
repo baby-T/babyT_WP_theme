@@ -1,9 +1,11 @@
+<?php get_header(); ?>
     <div class="container">
       <div class="inner">
         <div class="media">
           <div class="media__list">
 
-            <!-- ループ -->
+            <!-- ループ 最新○○件 -->
+            <!-- ▼ articleにユーザーに紐づくクラス名をつける -->
             <article class="media__item hiranai">
               <a href="#" class="media__item__link">
                 <div class="media__label">
@@ -23,3 +25,4 @@
         </div>
       </div>
     </div>
+<?php get_footer(); ?>
