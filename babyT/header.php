@@ -30,10 +30,10 @@
         </div>
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__item"><a href="#" class="header-nav__item__link">HTML・CSS</a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__item__link">CMS</a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__item__link">DESIGN</a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__item__link">MENBER</a></li>
+            <li class="header-nav__item"><a href="/html/" class="header-nav__item__link">HTML・CSS</a></li>
+            <li class="header-nav__item"><a href="/cms/" class="header-nav__item__link">CMS</a></li>
+            <li class="header-nav__item"><a href="/design/" class="header-nav__item__link">DESIGN</a></li>
+            <li class="header-nav__item"><a href="/member/" class="header-nav__item__link">MENBER</a></li>
             <li class="header-nav__item"><a href="#" target="_blank" class="header-nav__item__link"><img src="<?php echo get_template_directory_uri(); ?>/images/common/icon_twitter.png" alt="twitter"></a></li>
           </ul>
         </nav>
