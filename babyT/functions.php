@@ -2,18 +2,19 @@
 
 // アイキャッチ画像
 add_theme_support('post-thumbnails');
-add_image_size('single_image', 900, 660, true);
 
 
 /***********************************************************
 * 年度別アーカイブリスト
 ***********************************************************/
 function my_archives_link($html){
-if(preg_match('/[0-9]+?<\/a>/', $html))
-$html = preg_replace('/([0-9]+?)<\/a>/', '$1年</a>', $html);
-if(preg_match('/title=[\'\"][0-9]+?[\'\"]/', $html))
-$html = preg_replace('/(title=[\'\"][0-9]+?)([\'\"])/', '$1年$2', $html);
-return $html;
+    if(preg_match('/[0-9]+?<\/a>/', $html)) {
+        $html = preg_replace('/([0-9]+?)<\/a>/', '$1年</a>', $html);
+    }
+    if(preg_match('/title=[\'\"][0-9]+?[\'\"]/', $html)) {
+        $html = preg_replace('/(title=[\'\"][0-9]+?)([\'\"])/', '$1年$2', $html);
+    }
+    return $html;
 }
 add_filter('get_archives_link', 'my_archives_link', 10);
 
@@ -77,3 +78,10 @@ function remcat_rewrite($wp_rewrite) {
     $new_rules = array('(.+)/page/(.+)/?' => 'index.php?category_name='.$wp_rewrite->preg_index(1).'&paged='.$wp_rewrite->preg_index(2));
     $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
 }
+
+
+/***********************************************************
+* ナビゲーション
+***********************************************************/
+register_nav_menu('globalNavi', 'グローバルナビゲーション');
+

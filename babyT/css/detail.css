@@ -1,0 +1,272 @@
+.inner {
+  padding: 0 5%; }
+
+@media (min-width: 1025px) {
+  .inner {
+    padding: 0 20px;
+    width: 1040px;
+    margin: 0 auto; } }
+
+.container {
+  min-height: 200vh;
+  padding: 50px 0 100px;
+  background-image: -moz-linear-gradient(top, #41c3ef 0%, #ffbafb 45%, #ffbafb 55%, #7ff7fb);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#41c3ef), color-stop(0.45, #ffbafb), color-stop(0.55, #ffbafb), to(#7ff7fb)); }
+
+.l-block__left {
+  display: none; }
+
+.block {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 20px 25.23px 3.77px rgba(154, 152, 152, 0.4);
+  padding: 40px 30px; }
+  .block.entry {
+    margin: 0 0 20px; }
+
+.entry-title {
+  font-size: 3.0rem;
+  line-height: 1.28;
+  font-weight: bold;
+  margin: 0 0 20px; }
+
+.entry-meta {
+  display: table;
+  margin: 0 0 35px; }
+
+.entry-date, .entry-categories, .entry-author {
+  display: table-cell;
+  vertical-align: middle; }
+
+.entry-date {
+  font-size: 1.6rem;
+  padding: 0 20px 0 0; }
+
+.entry-category {
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #bebdbd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 0 10px 0 0; }
+
+.entry-author {
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #bebdbd;
+  border-radius: 4px;
+  padding: 4px 8px; }
+
+.entry-eyecatch {
+  margin: 0 0 30px; }
+
+.entry-body {
+  margin: 0 0 10px; }
+  .entry-body h3 {
+    font-size: 2.6rem;
+    line-height: 1.77;
+    margin: 0 0 30px;
+    font-weight: bold; }
+  .entry-body h2 {
+    font-size: 2.2rem;
+    line-height: 1.82;
+    margin: 0 0 30px;
+    font-weight: bold; }
+  .entry-body p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin: 0 0 30px; }
+    .entry-body p b {
+      font-weight: bold; }
+    .entry-body p a {
+      color: #40d5e2; }
+
+/* share */
+.share {
+  margin: 0 0 15px; }
+
+.share-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px; }
+
+.share-items {
+  display: table;
+  margin: 0 auto;
+  width: auto; }
+
+.share-item {
+  display: table-cell;
+  vertical-align: top; }
+  .share-item:first-child {
+    padding: 0 10px 0 0; }
+
+/* author-info */
+.author-info {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 30px;
+  display: table;
+  width: 100%; }
+
+.author-info-thumb {
+  display: table-cell;
+  vertical-align: middle;
+  width: 90px;
+  height: 90px; }
+
+.author-info-desc {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 0 0 10px; }
+
+.writer {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 15px; }
+
+.writer-exp {
+  font-size: 1.4rem;
+  line-height: 1.71; }
+
+/* navigations */
+.navigations {
+  position: relative;
+  margin: 0 0 50px;
+  height: 38px; }
+  .navigations .top {
+    font-size: 1.8rem;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.pagenation {
+  position: relative;
+  height: 38px; }
+  .pagenation .prev, .pagenation .next {
+    position: absolute;
+    top: 0;
+    width: 90px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center; }
+  .pagenation .prev {
+    left: 0; }
+    .pagenation .prev span {
+      display: inline-block;
+      padding: 0 0 0 18px;
+      position: relative; }
+      .pagenation .prev span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin: -5px 0 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #444;
+        border-right: 1px solid #444;
+        -webkit-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+                transform: rotate(-135deg); }
+  .pagenation .next {
+    right: 0; }
+    .pagenation .next span {
+      display: inline-block;
+      padding: 0 18px 0 0;
+      position: relative; }
+      .pagenation .next span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin: -5px 0 0;
+        right: 0;
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #444;
+        border-right: 1px solid #444;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+    .pagenation .next.is-active {
+      background: rgba(255, 255, 255, 0.7); }
+
+/* relative */
+.relative-title {
+  font-size: 1.8rem;
+  font-weight: bold; }
+
+.media__item {
+  font-size: 1.8rem;
+  line-height: 1.83;
+  margin: 20px 0 0; }
+
+.media__item a {
+  display: block;
+  padding: 25px 30px;
+  box-sizing: border-box;
+}
+
+/* side */
+.l-contents__right {
+  display: none; }
+
+@media (min-width: 1025px) {
+  .side-block + .side-block {
+    margin: 40px 0 0; }
+    .side-block + .side-block a {
+      text-decoration: underline; }
+  .side-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 20px; }
+  .side-item-year {
+    font-size: 1.8rem; }
+    .side-item-year.is-open {
+      text-decoration: underline; }
+  /*.side-item-months {
+    display: none; }*/
+  .side-item-month {
+    font-size: 1.6rem;
+    margin: 0 0 20px; }
+  .side-item {
+    font-size: 1.6rem; }
+    .side-item + .side-item {
+      margin: 18px 0 0; } }
+
+@media (min-width: 1025px) {
+  .l-contents {
+    display: table;
+    width: 100%; }
+    .l-contents__left {
+      width: 800px;
+      display: table-cell;
+      vertical-align: top;
+      padding: 0 40px 0 0; }
+    .l-contents__right {
+      display: table-cell;
+      width: 200px;
+      vertical-align: top; } }
+
+.hiranai {
+  background: linear-gradient(0deg, #fb9d5e, #94e0fa);
+  opacity: 1; }
+
+.susa {
+  background: linear-gradient(0deg, #b7e4fb, #ede1f8);
+  opacity: 1; }
+
+.nagano {
+  background: linear-gradient(0deg, #a3e2d5, #fff3de);
+  opacity: 1; }
+
+.muro {
+  background: linear-gradient(0deg, #c9d0e3, #fdb6b8);
+  opacity: 1; }

@@ -1,0 +1,307 @@
+/*
+Theme Name: babyT
+Author: TAM
+Description: babyT
+*/
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%;
+  width: 100%; }
+
+body {
+  background: #fff;
+  color: #343333;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  width: 100%;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  body a {
+    text-decoration: none;
+    color: #343333;
+    transition: .35s ease-in-out; }
+    body a:hover {
+      opacity: .7;
+      text-decoration: underline; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.sp {
+  display: block; }
+
+.pc {
+  display: none; }
+
+.break__sp {
+  display: block; }
+
+@media (min-width: 768px) {
+  .sp {
+    display: none; }
+  .pc {
+    display: block; }
+  .break__sp {
+    display: none; } }
+
+.header__top-bar {
+  width: 100%;
+  height: 61px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  background: url(images/common/bg_header.jpg);
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .header__top-bar {
+      max-width: 840px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 20px;
+      height: auto;
+      z-index: auto;
+      background: none; } }
+
+.header-logo {
+  width: 95px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 12px; }
+  @media (min-width: 768px) {
+    .header-logo {
+      width: 142px;
+      padding: 30px 0; } }
+
+.header-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none; }
+  @media (min-width: 768px) {
+    .header-nav {
+      position: static;
+      top: auto;
+      left: auto; } }
+
+.header-nav__list {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .header-nav__list {
+      width: auto;
+      display: table;
+      margin: 0 auto;
+      border-top: none; } }
+
+.header-nav__item {
+  background: url(images/common/bg_header.jpg);
+  background-size: 200% auto;
+  border-top: 1px solid #fff;
+  width: 100%; }
+  .header-nav__item:last-child {
+    border-bottom: 1px solid #fff; }
+    @media (min-width: 768px) {
+      .header-nav__item:last-child {
+        border-bottom: none; } }
+  .header-nav__item:nth-child(2n+1) {
+    background-position: 100% bottom; }
+  @media (min-width: 768px) {
+    .header-nav__item {
+      display: table-cell;
+      vertical-align: middle;
+      border-top: none;
+      width: auto;
+      background: none; } }
+
+.header-nav__item a {
+  padding: 15px 10px 10px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  font-weight: bold; }
+  .header-nav__item a:hover {
+    opacity: 1;
+    text-decoration: none; }
+  .header-nav__item a img {
+    width: auto;
+    max-width: auto;
+    height: 21px; }
+  @media (min-width: 768px) {
+    .header-nav__item a {
+      padding: 0 25px; }
+      .header-nav__item a img {
+        width: 30px;
+        height: 30px; } }
+
+@media (min-width: 768px) {
+  .global-header {
+    height: 160px;
+    width: 100%;
+    background: url(images/common/bg_header.jpg);
+    background-size: cover; }
+  .header-nav {
+    display: block !important; } }
+
+/* toggle */
+.toggle-wrap {
+  position: absolute;
+  top: 10px;
+  right: 3%; }
+
+#toggle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative; }
+
+.toggle__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 34px; }
+  .toggle__link:hover {
+    opacity: 1; }
+
+.toggle-icon {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  margin: -1px 0 0 -12px;
+  background: #fff;
+  transition: .2s; }
+
+.toggle-icon:before, .toggle-icon:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transition: .3s; }
+
+.toggle-icon:before {
+  margin-top: -8px; }
+
+.toggle-icon:after {
+  margin-top: 6px; }
+
+#toggle .toggle-icon.close {
+  background: transparent; }
+
+#toggle .toggle-icon.close:before, #toggle .toggle-icon.close:after {
+  margin-top: 0; }
+
+#toggle .toggle-icon.close:before {
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+#toggle .toggle-icon.close:after {
+  -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+.toggle-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2); }
+
+.toggle-overlay.show {
+  display: block; }
+
+.toggle-overlay.hide {
+  display: none; }
+
+@media (min-width: 768px) {
+  .toggle-overlay {
+    display: none !important; }
+  .toggle-wrap {
+    display: none; } }
+
+.footer {
+  background: #40d0d8; }
+
+.footer__inner {
+  max-width: 840px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+.footer-copy {
+  font-size: 1.0rem;
+  text-align: center;
+  padding: 8px 0; }
+
+@media (min-width: 768px) {
+  .footer-copy {
+    font-size: 1.4rem;
+    padding: 18px 0; } }

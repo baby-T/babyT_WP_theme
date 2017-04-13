@@ -1,28 +1,32 @@
 <?php get_header(); ?>
-    <div class="container">
-      <div class="inner">
+<div class="container">
+    <div class="inner">
         <div class="media">
-          <div class="media__list">
+            <div class="media__list">
+<?php
+$paged = get_query_var('paged')? get_query_var('paged') : 1;
 
-            <!-- ループ 最新○○件 -->
-            <!-- ▼ articleにユーザーに紐づくクラス名をつける -->
-            <article class="media__item hiranai">
-              <a href="#" class="media__item__link">
-                <div class="media__label">
-                  <div class="media__label__item name">HIRANAI</div>
-                  <div class="media__label__item category">PHP</div>
-                </div>
-                <div class="media-block">
-                  <h3 class="media-title">PHPでGoogle Analytics APIを利用して、アクセス解析のデータをSlackに投げる(後編)</h3>
-                  <time datetime="2016-02-15" class="media-time">2016.02.15</time>
-                </div>
-              </a>
-            </article>
+$the_query = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page' => 12,
+    'paged' => $paged,
+    'post_status' => 'publish'
+));
+if ( $the_query->have_posts() ) :
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 
+        get_template_part( 'module/list' );
 
+        if( function_exists('wp_pagenavi') ):
+            wp_pagenavi( $the_query );
+        endif;
 
-          </div>
+    endwhile;
+endif;
+wp_reset_postdata();
+?>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 <?php get_footer(); ?>
