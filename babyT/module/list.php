@@ -1,7 +1,8 @@
 <?php
         $display_name = get_the_author_meta('display_name');
+        $author_name = get_the_author_meta('nickname');
 ?>
-                <article class="media__item hiranai">
+                <article class="media__item <?php echo $author_name; ?>">
                     <a href="<?php the_permalink(); ?>" class="media__item__link">
                         <div class="media__label">
                             <div class="media__label__item name"><?php echo $display_name; ?></div>

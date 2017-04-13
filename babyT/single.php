@@ -42,7 +42,7 @@ endif;
                         </ul>
                     </div>
                     <div class="author-info">
-                        <div class="author-info-thumb hiranai"></div>
+                        <div class="author-info-thumb <?php echo $author->nickname; ?>"></div>
                         <div class="author-info-desc">
                             <div class="writer">Writer | <?php echo $author->display_name; ?></div>
                             <div class="writer-exp"><?php the_author_meta('description', $author_id ); ?></div>
@@ -83,9 +83,9 @@ foreach($categories as $category):
         foreach($related_posts as $related_post):
             $title = $related_post->post_title;
 ?>
-                        <article class="media__item hiranai">
+                        <article class="media__item <?php echo $author->nickname; ?>">
                             <a href="<?php echo get_permalink($related_post->ID); ?>">
-                                <?php echo $title ?>
+                                <?php echo $title; ?>
                             </a>
                         </article>
 <?php

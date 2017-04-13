@@ -305,3 +305,19 @@ img {
   .footer-copy {
     font-size: 1.4rem;
     padding: 18px 0; } }
+
+.hiranai {
+  background: linear-gradient(0deg, #fb9d5e, #94e0fa);
+  opacity: 1; }
+
+.susa {
+  background: linear-gradient(0deg, #b7e4fb, #ede1f8);
+  opacity: 1; }
+
+.nagano {
+  background: linear-gradient(0deg, #a3e2d5, #fff3de);
+  opacity: 1; }
+
+.muro {
+  background: linear-gradient(0deg, #c9d0e3, #fdb6b8);
+  opacity: 1; }

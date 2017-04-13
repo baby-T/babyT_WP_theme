@@ -1,6 +1,6 @@
 <?php
     if(is_home()):
-        $description = bloginfo('description');
+        $description = get_bloginfo('description');
         $url = get_bloginfo('url');
     elseif(is_single()):
         if ($post->post_excerpt):
